@@ -82,6 +82,7 @@ A task management application for organizing and tracking daily activities effic
 * Oracle Cloud Infrastructure Data Science Professional
 * Machine Learning with Python – IBM
 * Artificial Intelligence & Machine Learning – Coursera
+* Infosys Springboard – Prompt Engineering
 
 ---
 
