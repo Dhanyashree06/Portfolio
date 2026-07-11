@@ -245,11 +245,23 @@ nav a:hover {
 }
 
 .hero-grid {
-    display: grid;
-    grid-template-columns: 1.15fr 0.85fr;
-    gap: 3.5rem;
-    align-items: center;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.hero-content {
+    max-width: 850px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.hero-description {
+    margin: 0 auto 2rem;
+}
+
+.hero-btns {
+    justify-content: center;
 }
 
 .hero-content h2 {
@@ -638,10 +650,9 @@ section.sec-padding {
 
 /* About & Dashboard */
 .dashboard-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2.5rem;
-    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .dashboard-card h3 {
@@ -833,9 +844,9 @@ section.sec-padding {
 
 /* Skills Section */
 .skills-grid {
-    display: grid;
-    grid-template-columns: 1.15fr 0.85fr;
-    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .skills-intro h3 {
@@ -1516,8 +1527,8 @@ footer p {
 /* Responsive Breakpoints */
 @media (max-width: 992px) {
     .hero-grid {
-        grid-template-columns: 1fr;
-        gap: 3rem;
+        display: flex;
+        justify-content: center;
         text-align: center;
     }
 

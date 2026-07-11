@@ -102,655 +102,656 @@
                         <span>Prompt Engg</span>
                     </div>
 
-                    <!-- AI Welcome Assistant Window -->
-                    <div class="glass-card ai-assistant-card"
-                        style="width: 100%; max-width: 380px; z-index: 10; position: relative;">
-                        <div
-                            style="display: flex; align-items: center; gap: 10px; margin-bottom: 0.85rem; border-bottom: 1px solid rgba(0,0,0,0.06); padding-bottom: 0.65rem;">
-                            <div class="bubble-avatar" style="background: var(--primary);"><i
-                                    class="fa-solid fa-robot"></i></div>
-                            <div>
-                                <h3
-                                    style="font-size: 0.9rem; font-weight: 800; color: var(--text-primary); margin: 0; line-height: 1.2;">
-                                    Lab Assistant</h3>
-                                <span
-                                    style="font-size: 0.7rem; color: #059669; font-weight: 700; display: flex; align-items: center; gap: 4px;">
-                                    <span
-                                        style="display:inline-block; width:6px; height:6px; background:#059669; border-radius:50%;"></span>Online
-                                </span>
+
+
+                    <!-- About Section & Dashboard -->
+                    <section id="about" class="sec-padding reveal theme-cyan">
+                        <div class="container">
+                            <div class="sec-header">
+                                <span class="sec-subtitle">Discovery</span>
+                                <h2 class="sec-title">About Me & Mission</h2>
+                            </div>
+
+                            <div class="dashboard-grid">
+                                <!-- Left Side: Bio & Mission Cards -->
+                                <div class="glass-card dashboard-card themed-card">
+                                    <h3><i class="fa-solid fa-user-astronaut"></i> Background</h3>
+                                    <p class="about-p">
+                                        I am currently pursuing a Bachelor of Engineering in Computer Science and
+                                        Engineering.
+                                        I am a Computer Science and Engineering student passionate about Artificial
+                                        Intelligence,
+                                        Machine Learning, and Software Development. I enjoy building projects, exploring
+                                        new
+                                        technologies, and solving real-world problems through code.
+                                        I love solving intricate problems and translate concepts into functioning web
+                                        apps and
+                                        notebooks.
+                                    </p>
+
+                                    <h3><i class="fa-solid fa-compass"></i> Directives</h3>
+                                    <div class="mission-boxes">
+                                        <div class="mission-box">
+                                            <div class="mission-icon"><i class="fa-solid fa-rocket"></i></div>
+                                            <div class="mission-details">
+                                                <h4>Current Mission</h4>
+                                                <p>Become an industry-ready AI Engineer</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="mission-box">
+                                            <div class="mission-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                                            <div class="mission-details">
+                                                <h4>Current Learning</h4>
+                                                <p>DSA, Machine Learning, LLMs, Prompt Engineering</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="mission-box">
+                                            <div class="mission-icon"><i class="fa-solid fa-bullseye"></i></div>
+                                            <div class="mission-details">
+                                                <h4>Next Target</h4>
+                                                <p>Research + Industry Scale Projects</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Right Side: Light Developer Terminal Widget -->
+                                <div class="terminal-window">
+                                    <div class="terminal-header">
+                                        <div class="terminal-buttons">
+                                            <span class="term-btn red"></span>
+                                            <span class="term-btn yellow"></span>
+                                            <span class="term-btn green"></span>
+                                        </div>
+                                        <div class="terminal-title">dhanyashree@shell: ~</div>
+                                    </div>
+
+                                    <div class="terminal-body" id="term-body">
+                                        <div class="terminal-welcome">
+                                            Welcome to Dhanyashree's Interactive Shell v1.0.0.<br>
+                                            Click the shortcuts below or type a command to query.
+                                        </div>
+
+                                        <div class="terminal-menu-title">Select a terminal option:</div>
+                                        <div class="terminal-shortcuts">
+                                            <span class="terminal-link" data-cmd="about">&gt; about</span>
+                                            <span class="terminal-link" data-cmd="skills">&gt; skills</span>
+                                            <span class="terminal-link" data-cmd="projects">&gt; projects</span>
+                                            <span class="terminal-link" data-cmd="timeline">&gt; timeline</span>
+                                            <span class="terminal-link" data-cmd="contact">&gt; contact</span>
+                                        </div>
+
+                                        <!-- Real-time inputs append here -->
+
+                                        <div class="terminal-input-line">
+                                            <span class="terminal-prompt">dhanyashree@shell:~$</span>
+                                            <div class="terminal-input-wrapper">
+                                                <input type="text" id="term-input" class="terminal-input"
+                                                    autocomplete="off" placeholder="type 'help'...">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Technical Skills Section -->
+                    <section id="skills" class="sec-padding reveal theme-rose">
+                        <div class="container">
+                            <div class="sec-header">
+                                <span class="sec-subtitle">Aptitude</span>
+                                <h2 class="sec-title">Technical Expertise</h2>
+                            </div>
+
+                            <div class="skills-grid">
+                                <div class="skills-intro">
+                                    <h3>Empowering ideas with a comprehensive toolkit.</h3>
+                                    <p>
+                                        Specializing in Python and machine learning algorithms, I construct robust AI
+                                        architectures
+                                        and test prompt configurations to harness the power of LLMs.
+                                        Here is a summary of my technical proficiencies and background.
+                                    </p>
+
+                                    <h3>Other Technologies & Focus areas</h3>
+                                    <div class="tags-container">
+                                        <span class="tag-badge">C Programming</span>
+                                        <span class="tag-badge">SQL / MySQL</span>
+                                        <span class="tag-badge">Pandas</span>
+                                        <span class="tag-badge">NumPy</span>
+                                        <span class="tag-badge">Matplotlib</span>
+                                        <span class="tag-badge">Data Science</span>
+                                        <span class="tag-badge">Generative AI</span>
+                                        <span class="tag-badge">Large Language Models (LLMs)</span>
+                                        <span class="tag-badge">DSA (Data Structures & Algorithms)</span>
+                                    </div>
+                                </div>
+
+                                <!-- Skill meters (animated on scroll by JavaScript) -->
+                                <div class="glass-card skills-list themed-card">
+                                    <div class="skill-bar-container">
+                                        <div class="skill-info">
+                                            <span class="skill-name">⚙️Python</span>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="skill-bar-container">
+                                        <div class="skill-info">
+                                            <span class="skill-name">🧠AI / ML</span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="skill-bar-container">
+                                        <div class="skill-info">
+                                            <span class="skill-name">⚡Prompt Engineering</span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="skill-bar-container">
+                                        <div class="skill-info">
+                                            <span class="skill-name">☕Java</span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="skill-bar-container">
+                                        <div class="skill-info">
+                                            <span class="skill-name">🌐Web Development</span>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="skill-bar-container">
+                                        <div class="skill-info">
+                                            <span class="skill-name">🔗Data Structures & Algorithms</span>
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="ai-chat-box" id="ai-chat-box">
-                            <div class="chat-bubble assistant">
-                                <div class="bubble-avatar"><i class="fa-solid fa-robot"></i></div>
-                                <div class="bubble-content">Hi there! Welcome to Dhanyashree's portfolio. Explore my
-                                    projects, skills, and journey in AI & Machine Learning.
-                                    Ask me anything:</div>
+                    </section>
+
+                    <!-- Timeline / Milestones Section -->
+                    <section id="timeline" class="sec-padding reveal theme-emerald">
+                        <div class="container">
+                            <div class="sec-header">
+                                <span class="sec-subtitle">Milestones</span>
+                                <h2 class="sec-title">Academic & Professional Journey</h2>
+                            </div>
+
+                            <div class="timeline-outer">
+
+                                <!-- 2024 Started B.E CSE -->
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="glass-card timeline-content themed-card">
+                                        <div class="timeline-year">2024</div>
+                                        <h4>🎓 Started B.E. CSE</h4>
+                                        <h5>KGiSL Institute of Technology, Coimbatore</h5>
+                                        <p>Initiated my formal studies in Computer Science and Engineering, building
+                                            core skills in
+                                            computation models, hardware structures, and mathematics.</p>
+                                    </div>
+                                </div>
+
+                                <!-- 2025 Python & Projects -->
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="glass-card timeline-content themed-card">
+                                        <div class="timeline-year">2025</div>
+                                        <h4>🐍 Learned Python & Building Projects</h4>
+                                        <h5>Development Fundamentals</h5>
+                                        <p>Mastered Python syntax, OOP concepts, and data libraries. 💻 Started creating
+                                            software
+                                            utilities to solve daily problems.</p>
+                                    </div>
+                                </div>
+
+                                <!-- 2025 Built Apps -->
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="glass-card timeline-content themed-card">
+                                        <div class="timeline-year">2025</div>
+                                        <h4>🗣️ VoiceNoteFlow & Task Scheduler</h4>
+                                        <h5>Core App Deployments</h5>
+                                        <p>Built VoiceNoteFlow using speech recognition packages and Streamlit. 📅
+                                            Developed Task
+                                            Scheduler using SQLite database schemas.</p>
+                                    </div>
+                                </div>
+
+                                <!-- 2025 Oracle Certifications -->
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="glass-card timeline-content themed-card">
+                                        <div class="timeline-year">2025</div>
+                                        <h4>🏆 Oracle Professional Certifications</h4>
+                                        <h5>OCI Professional Credentials</h5>
+                                        <p>Successfully certified as an Oracle Cloud Infrastructure (OCI) Generative AI
+                                            Professional and
+                                            OCI Data Science Professional.</p>
+                                    </div>
+                                </div>
+
+                                <!-- 2026 Prompt Engineering Internship -->
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="glass-card timeline-content themed-card">
+                                        <div class="timeline-year">2026</div>
+                                        <h4>🤖 Prompt Engineering & Internship</h4>
+                                        <h5>Accent Techno Soft (ATS) 💼</h5>
+                                        <p>Entered the world of AI & Prompt Engineering. Joined Accent Techno Soft as a
+                                            Prompt
+                                            Engineering Intern, managing and evaluating generative model prompts.</p>
+                                    </div>
+                                </div>
+
+                                <!-- 2026 - Present Advanced Learning -->
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="glass-card timeline-content themed-card">
+                                        <div class="timeline-year">2026 - Present</div>
+                                        <h4>📚 Advanced AI & Algorithms Focus</h4>
+                                        <h5>Theoretical & Practical Mastery</h5>
+                                        <p>Actively learning Machine Learning, exploring Deep Learning concepts, and
+                                            practicing Data
+                                            Structures & Algorithms (DSA) consistently.</p>
+                                    </div>
+                                </div>
+
+                                <!-- 2027 Goals -->
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="glass-card timeline-content themed-card">
+                                        <div class="timeline-year">2027</div>
+                                        <h4>🎯 Impactful Projects & Hackathons</h4>
+                                        <h5>Development & Competition Goals</h5>
+                                        <p>Targeting to build industry-ready AI/ML applications and participate in key
+                                            hackathons and AI
+                                            competitions to test skillsets under pressure.</p>
+                                    </div>
+                                </div>
+
+                                <!-- 2028 Graduation -->
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="glass-card timeline-content themed-card">
+                                        <div class="timeline-year">2028</div>
+                                        <h4>🎓 Graduate as an AI & ML Engineer</h4>
+                                        <h5>Degree Completion Target</h5>
+                                        <p>\Graduate with a strong foundation in Artificial Intelligence, Machine
+                                            Learning,and Software
+                                            Engineering.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Future Goal -->
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="glass-card timeline-content themed-card">
+                                        <div class="timeline-year">Future Goals 🚀</div>
+                                        <h4>🧠 AI/ML Engineering Career</h4>
+                                        <h5>Generative AI & Real-World Impact</h5>
+                                        <p>
+                                            🔬 Work on Generative AI & Large Language Models.<br>
+                                            🌍 Build scalable AI solutions that solve real-world problems.
+                                        </p>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
+                    </section>
 
-                        <div class="assistant-options" id="ai-options">
-                            <span class="option-chip" data-ask="projects">Projects</span>
-                            <span class="option-chip" data-ask="skills">Skills</span>
-                            <span class="option-chip" data-ask="learning">Current Focus</span>
-                            <span class="option-chip" data-ask="certs">Certifications</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                    <!-- Experience / Internships Section -->
+                    <section id="experience" class="sec-padding reveal theme-cyan">
+                        <div class="container">
+                            <div class="sec-header">
+                                <span class="sec-subtitle">Professional Experience</span>
+                                <h2 class="sec-title">Internships</h2>
+                            </div>
 
-    <!-- About Section & Dashboard -->
-    <section id="about" class="sec-padding reveal theme-cyan">
-        <div class="container">
-            <div class="sec-header">
-                <span class="sec-subtitle">Discovery</span>
-                <h2 class="sec-title">About Me & Mission</h2>
-            </div>
+                            <div class="certs-grid">
 
-            <div class="dashboard-grid">
-                <!-- Left Side: Bio & Mission Cards -->
-                <div class="glass-card dashboard-card themed-card">
-                    <h3><i class="fa-solid fa-user-astronaut"></i> Background</h3>
-                    <p class="about-p">
-                        I am currently pursuing a Bachelor of Engineering in Computer Science and Engineering.
-                        I am a Computer Science and Engineering student passionate about Artificial Intelligence,
-                        Machine Learning, and Software Development. I enjoy building projects, exploring new
-                        technologies, and solving real-world problems through code.
-                        I love solving intricate problems and translate concepts into functioning web apps and
-                        notebooks.
-                    </p>
+                                <!-- Cognifyz -->
+                                <div class="glass-card cert-card themed-card">
+                                    <span class="cert-icon">📊</span>
+                                    <div class="cert-info">
+                                        <h3>Data Analysis Intern</h3>
+                                        <p>Cognifyz Technologies</p>
+                                    </div>
+                                </div>
 
-                    <h3><i class="fa-solid fa-compass"></i> Directives</h3>
-                    <div class="mission-boxes">
-                        <div class="mission-box">
-                            <div class="mission-icon"><i class="fa-solid fa-rocket"></i></div>
-                            <div class="mission-details">
-                                <h4>Current Mission</h4>
-                                <p>Become an industry-ready AI Engineer</p>
+                                <!-- Code Alpha -->
+                                <div class="glass-card cert-card themed-card">
+                                    <span class="cert-icon">🤖</span>
+                                    <div class="cert-info">
+                                        <h3>Machine Learning Intern</h3>
+                                        <p>Code Alpha</p>
+                                    </div>
+                                </div>
+
+                                <!-- Future Intern -->
+                                <div class="glass-card cert-card themed-card">
+                                    <span class="cert-icon">🧠</span>
+                                    <div class="cert-info">
+                                        <h3>Machine Learning Intern</h3>
+                                        <p>Future Intern</p>
+                                    </div>
+                                </div>
+
+                                <!-- CodSoft -->
+                                <div class="glass-card cert-card themed-card">
+                                    <span class="cert-icon">🌐</span>
+                                    <div class="cert-info">
+                                        <h3>Web Development Intern</h3>
+                                        <p>CodSoft</p>
+                                    </div>
+                                </div>
+
+                                <!-- Yuva -->
+                                <div class="glass-card cert-card themed-card">
+                                    <span class="cert-icon">🚀</span>
+                                    <div class="cert-info">
+                                        <h3>AI Business Solutions Architect</h3>
+                                        <p>Yuva</p>
+                                    </div>
+                                </div>
+
+                                <!-- Accent Techno Soft -->
+                                <div class="glass-card cert-card themed-card">
+                                    <span class="cert-icon">💡</span>
+                                    <div class="cert-info">
+                                        <h3>Prompt Engineering Intern</h3>
+                                        <p>Accent Techno Soft</p>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
+                    </section>
 
-                        <div class="mission-box">
-                            <div class="mission-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-                            <div class="mission-details">
-                                <h4>Current Learning</h4>
-                                <p>DSA, Machine Learning, LLMs, Prompt Engineering</p>
+                    <!-- Project Universe Section -->
+                    <section id="projects" class="sec-padding reveal theme-indigo">
+                        <div class="container">
+                            <div class="sec-header">
+                                <span class="sec-subtitle">Project Universe</span>
+                                <h2 class="sec-title">Featured Projects</h2>
+                            </div>
+
+                            <div class="projects-grid">
+                                <!-- Heat Transfer Visualizer -->
+                                <div class="glass-card project-card themed-card">
+                                    <div>
+                                        <span class="project-icon">🌍</span>
+                                        <h3>Heat Transfer Visualizer</h3>
+                                        <p>
+                                            Interactive modeling application mapping heat diffusion and thermodynamics.
+                                            Users can simulate thermal conduction rates across customized matrices and
+                                            visualize
+                                            temperature distributions in 2D graphs.
+                                        </p>
+                                    </div>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">NumPy</span>
+                                        <span class="tech-tag">Matplotlib</span>
+                                    </div>
+                                </div>
+
+                                <!-- Support Ticket Classification & Prioritization System -->
+                                <div class="glass-card project-card themed-card">
+                                    <div>
+                                        <span class="project-icon">🎫</span>
+                                        <h3>Support Ticket Classification & Prioritization System</h3>
+                                        <p>
+                                            Developed an NLP and Machine Learning-based system that automatically
+                                            classifies customer
+                                            support tickets into predefined categories and predicts their priority
+                                            levels. The system
+                                            helps support teams identify critical issues faster, improve response times,
+                                            and streamline
+                                            support workflow management.
+                                        </p>
+                                    </div>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">NLP</span>
+                                        <span class="tech-tag">Scikit-learn</span>
+                                        <span class="tech-tag">Pandas</span>
+                                        <span class="tech-tag">Machine Learning</span>
+                                    </div>
+                                </div>
+
+                                <!-- VoiceNoteFlow -->
+                                <div class="glass-card project-card themed-card">
+                                    <div>
+                                        <span class="project-icon">🪐</span>
+                                        <h3>VoiceNoteFlow</h3>
+                                        <p>
+                                            Application that transcribes vocal files and instantly structures verbal
+                                            tracks into
+                                            formatted markdown checklists, clean notes, or paragraphs.
+                                        </p>
+                                    </div>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">SpeechRecognition</span>
+                                        <span class="tech-tag">Streamlit</span>
+                                    </div>
+                                </div>
+
+                                <!-- Task Scheduler -->
+                                <div class="glass-card project-card themed-card">
+                                    <div>
+                                        <span class="project-icon">🌎</span>
+                                        <h3>Task Scheduler</h3>
+                                        <p>
+                                            High-efficiency planning script using a lightweight database schema to
+                                            organize weekly
+                                            tasks, evaluate priorities, track status, and output reminder logs.
+                                        </p>
+                                    </div>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">SQLite</span>
+                                        <span class="tech-tag">Command Line</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                    </section>
 
-                        <div class="mission-box">
-                            <div class="mission-icon"><i class="fa-solid fa-bullseye"></i></div>
-                            <div class="mission-details">
-                                <h4>Next Target</h4>
-                                <p>Research + Industry Scale Projects</p>
+                    <!-- Certifications Section -->
+                    <section id="certifications" class="sec-padding reveal theme-amber">
+                        <div class="container">
+                            <div class="sec-header">
+                                <span class="sec-subtitle">Credentials</span>
+                                <h2 class="sec-title">Certifications & Achievements</h2>
+                            </div>
+
+                            <div class="certs-grid">
+                                <!-- Oracle GenAI -->
+                                <div class="glass-card cert-card themed-card">
+                                    <span class="cert-icon"><i class="fa-solid fa-trophy"></i></span>
+                                    <div class="cert-info">
+                                        <h3>Generative AI Professional</h3>
+                                        <p>Oracle Cloud Infrastructure (OCI)</p>
+                                    </div>
+                                </div>
+
+                                <!-- Oracle Data Science -->
+                                <div class="glass-card cert-card themed-card">
+                                    <span class="cert-icon"><i class="fa-solid fa-trophy"></i></span>
+                                    <div class="cert-info">
+                                        <h3>Data Science Professional</h3>
+                                        <p>Oracle Cloud Infrastructure (OCI)</p>
+                                    </div>
+                                </div>
+
+                                <!-- IBM ML -->
+                                <div class="glass-card cert-card themed-card">
+                                    <span class="cert-icon"><i class="fa-solid fa-trophy"></i></span>
+                                    <div class="cert-info">
+                                        <h3>Machine Learning with Python</h3>
+                                        <p>IBM Certification</p>
+                                    </div>
+                                </div>
+
+                                <!-- Coursera AI ML -->
+                                <div class="glass-card cert-card themed-card">
+                                    <span class="cert-icon"><i class="fa-solid fa-trophy"></i></span>
+                                    <div class="cert-info">
+                                        <h3>AI & ML Professional</h3>
+                                        <p>Coursera Certification</p>
+                                    </div>
+                                </div>
+
+                                <!-- Infosys Springboard - Prompt Engineering -->
+                                <div class="glass-card cert-card themed-card theme-purple">
+                                    <div class="cert-icon">
+                                        <i class="fa-solid fa-award"></i>
+                                    </div>
+                                    <div class="cert-info">
+                                        <h3>Prompt Engineering</h3>
+                                        <p><strong>Infosys Springboard</strong></p>
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </section>
 
-                <!-- Right Side: Light Developer Terminal Widget -->
-                <div class="terminal-window">
-                    <div class="terminal-header">
-                        <div class="terminal-buttons">
-                            <span class="term-btn red"></span>
-                            <span class="term-btn yellow"></span>
-                            <span class="term-btn green"></span>
-                        </div>
-                        <div class="terminal-title">dhanyashree@shell: ~</div>
-                    </div>
+                    <!-- Contact Section -->
+                    <section id="contact" class="sec-padding reveal theme-purple">
+                        <div class="container">
+                            <div class="sec-header">
+                                <span class="sec-subtitle">Let's Connect</span>
+                                <h2 class="sec-title">Get In Touch</h2>
+                            </div>
 
-                    <div class="terminal-body" id="term-body">
-                        <div class="terminal-welcome">
-                            Welcome to Dhanyashree's Interactive Shell v1.0.0.<br>
-                            Click the shortcuts below or type a command to query.
-                        </div>
+                            <div class="contact-grid">
+                                <!-- Left Column: Contact details -->
+                                <div class="contact-info">
+                                    <h3>Let's build something intelligent.</h3>
+                                    <p>
+                                        I am currently looking for internship opportunities and research partnerships.
+                                        If you have questions about my projects or want to discuss AI integration
+                                        workflows, send a
+                                        message!
+                                    </p>
 
-                        <div class="terminal-menu-title">Select a terminal option:</div>
-                        <div class="terminal-shortcuts">
-                            <span class="terminal-link" data-cmd="about">&gt; about</span>
-                            <span class="terminal-link" data-cmd="skills">&gt; skills</span>
-                            <span class="terminal-link" data-cmd="projects">&gt; projects</span>
-                            <span class="terminal-link" data-cmd="timeline">&gt; timeline</span>
-                            <span class="terminal-link" data-cmd="contact">&gt; contact</span>
-                        </div>
+                                    <div class="contact-details">
+                                        <div class="contact-item">
+                                            <div class="contact-item-icon"><i class="fa-solid fa-phone"></i></div>
+                                            <div class="contact-item-text">
+                                                <p>Contact</p>
+                                                <p>9942480018</p>
+                                            </div>
+                                        </div>
 
-                        <!-- Real-time inputs append here -->
+                                        <div class="contact-item">
+                                            <div class="contact-item-icon"><i class="fa-solid fa-envelope"></i></div>
+                                            <div class="contact-item-text">
+                                                <p>Email</p>
+                                                <p>dhanyashree316@gmail.com</p>
+                                            </div>
+                                        </div>
 
-                        <div class="terminal-input-line">
-                            <span class="terminal-prompt">dhanyashree@shell:~$</span>
-                            <div class="terminal-input-wrapper">
-                                <input type="text" id="term-input" class="terminal-input" autocomplete="off"
-                                    placeholder="type 'help'...">
+                                        <div class="contact-item">
+                                            <div class="contact-item-icon"><i class="fa-solid fa-location-dot"></i>
+                                            </div>
+                                            <div class="contact-item-text">
+                                                <p>Location</p>
+                                                <p>Coimbatore, Tamil Nadu</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="contact-socials">
+                                        <a href="https://www.linkedin.com/in/dhanyashree-s-38b940314/"
+                                            class="social-btn" target="_blank" aria-label="LinkedIn Profile"><i
+                                                class="fa-brands fa-linkedin-in"></i></a>
+                                        <a href="https://github.com/Dhanyashree06" class="social-btn" target="_blank"
+                                            aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+                                    </div>
+
+                                    <!-- Resume Buttons -->
+                                    <div class="resume-download-wrap">
+                                        <a href="Resume.pdf" download="Dhanyashree_S_Resume.pdf" class="btn btn-resume"
+                                            id="download-resume-btn">
+                                            <i class="fa-solid fa-file-arrow-down"></i>
+                                            Download Resume
+                                        </a>
+                                        <a href="Resume.pdf" target="_blank" class="btn btn-resume-view"
+                                            id="view-resume-btn">
+                                            <i class="fa-solid fa-eye"></i>
+                                            View Resume
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Right Column: Message Form -->
+                                <div class="glass-card contact-form-container themed-card">
+                                    <form id="contact-form" class="contact-form" novalidate>
+                                        <div class="form-group">
+                                            <label for="form-name">Name</label>
+                                            <input type="text" id="form-name" class="form-control"
+                                                placeholder="Your Name" required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="form-email">Email</label>
+                                            <input type="email" id="form-email" class="form-control"
+                                                placeholder="yourname@example.com" required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="form-message">Message</label>
+                                            <textarea id="form-message" class="form-control"
+                                                placeholder="Hi Dhanyashree, I would love to talk about..."
+                                                required></textarea>
+                                        </div>
+
+                                        <button type="submit" id="contact-submit-btn" class="btn btn-primary"
+                                            style="border: none;">
+                                            Send Message <i class="fa-regular fa-paper-plane"></i>
+                                        </button>
+                                    </form>
+                                </div>
+
+                                <!-- Toast Notification -->
+                                <div id="contact-toast" class="contact-toast" aria-live="polite">
+                                    <span id="contact-toast-icon"></span>
+                                    <span id="contact-toast-msg"></span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                    </section>
 
-    <!-- Technical Skills Section -->
-    <section id="skills" class="sec-padding reveal theme-rose">
-        <div class="container">
-            <div class="sec-header">
-                <span class="sec-subtitle">Aptitude</span>
-                <h2 class="sec-title">Technical Expertise</h2>
-            </div>
-
-            <div class="skills-grid">
-                <div class="skills-intro">
-                    <h3>Empowering ideas with a comprehensive toolkit.</h3>
-                    <p>
-                        Specializing in Python and machine learning algorithms, I construct robust AI architectures
-                        and test prompt configurations to harness the power of LLMs.
-                        Here is a summary of my technical proficiencies and background.
-                    </p>
-
-                    <h3>Other Technologies & Focus areas</h3>
-                    <div class="tags-container">
-                        <span class="tag-badge">C Programming</span>
-                        <span class="tag-badge">SQL / MySQL</span>
-                        <span class="tag-badge">Pandas</span>
-                        <span class="tag-badge">NumPy</span>
-                        <span class="tag-badge">Matplotlib</span>
-                        <span class="tag-badge">Data Science</span>
-                        <span class="tag-badge">Generative AI</span>
-                        <span class="tag-badge">Large Language Models (LLMs)</span>
-                        <span class="tag-badge">DSA (Data Structures & Algorithms)</span>
-                    </div>
-                </div>
-
-                <!-- Skill meters (animated on scroll by JavaScript) -->
-                <div class="glass-card skills-list themed-card">
-                    <div class="skill-bar-container">
-                        <div class="skill-info">
-                            <span class="skill-name">⚙️Python</span>
-
+                    <!-- Footer -->
+                    <footer>
+                        <div class="container">
+                            <p style="margin: 0; font-weight: 500; color: var(--text-primary);">© 2026 Dhanyashree S</p>
+                            <p
+                                style="margin: 6px 0 0 0; font-weight: 600; color: #7c3aed; letter-spacing: 1px; font-size: 0.85rem;">
+                                Learning • Building • Innovating</p>
                         </div>
+                    </footer>
 
-                    </div>
-
-                    <div class="skill-bar-container">
-                        <div class="skill-info">
-                            <span class="skill-name">🧠AI / ML</span>
-                        </div>
-
-                    </div>
-
-                    <div class="skill-bar-container">
-                        <div class="skill-info">
-                            <span class="skill-name">⚡Prompt Engineering</span>
-                        </div>
-
-                    </div>
-
-                    <div class="skill-bar-container">
-                        <div class="skill-info">
-                            <span class="skill-name">☕Java</span>
-                        </div>
-
-                    </div>
-
-                    <div class="skill-bar-container">
-                        <div class="skill-info">
-                            <span class="skill-name">🌐Web Development</span>
-                        </div>
-
-                    </div>
-
-
-                    <div class="skill-bar-container">
-                        <div class="skill-info">
-                            <span class="skill-name">🔗Data Structures & Algorithms</span>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- Timeline / Milestones Section -->
-    <section id="timeline" class="sec-padding reveal theme-emerald">
-        <div class="container">
-            <div class="sec-header">
-                <span class="sec-subtitle">Milestones</span>
-                <h2 class="sec-title">Academic & Professional Journey</h2>
-            </div>
-
-            <div class="timeline-outer">
-
-                <!-- 2024 Started B.E CSE -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="glass-card timeline-content themed-card">
-                        <div class="timeline-year">2024</div>
-                        <h4>🎓 Started B.E. CSE</h4>
-                        <h5>KGiSL Institute of Technology, Coimbatore</h5>
-                        <p>Initiated my formal studies in Computer Science and Engineering, building core skills in
-                            computation models, hardware structures, and mathematics.</p>
-                    </div>
-                </div>
-
-                <!-- 2025 Python & Projects -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="glass-card timeline-content themed-card">
-                        <div class="timeline-year">2025</div>
-                        <h4>🐍 Learned Python & Building Projects</h4>
-                        <h5>Development Fundamentals</h5>
-                        <p>Mastered Python syntax, OOP concepts, and data libraries. 💻 Started creating software
-                            utilities to solve daily problems.</p>
-                    </div>
-                </div>
-
-                <!-- 2025 Built Apps -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="glass-card timeline-content themed-card">
-                        <div class="timeline-year">2025</div>
-                        <h4>🗣️ VoiceNoteFlow & Task Scheduler</h4>
-                        <h5>Core App Deployments</h5>
-                        <p>Built VoiceNoteFlow using speech recognition packages and Streamlit. 📅 Developed Task
-                            Scheduler using SQLite database schemas.</p>
-                    </div>
-                </div>
-
-                <!-- 2025 Oracle Certifications -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="glass-card timeline-content themed-card">
-                        <div class="timeline-year">2025</div>
-                        <h4>🏆 Oracle Professional Certifications</h4>
-                        <h5>OCI Professional Credentials</h5>
-                        <p>Successfully certified as an Oracle Cloud Infrastructure (OCI) Generative AI Professional and
-                            OCI Data Science Professional.</p>
-                    </div>
-                </div>
-
-                <!-- 2026 Prompt Engineering Internship -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="glass-card timeline-content themed-card">
-                        <div class="timeline-year">2026</div>
-                        <h4>🤖 Prompt Engineering & Internship</h4>
-                        <h5>Accent Techno Soft (ATS) 💼</h5>
-                        <p>Entered the world of AI & Prompt Engineering. Joined Accent Techno Soft as a Prompt
-                            Engineering Intern, managing and evaluating generative model prompts.</p>
-                    </div>
-                </div>
-
-                <!-- 2026 - Present Advanced Learning -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="glass-card timeline-content themed-card">
-                        <div class="timeline-year">2026 - Present</div>
-                        <h4>📚 Advanced AI & Algorithms Focus</h4>
-                        <h5>Theoretical & Practical Mastery</h5>
-                        <p>Actively learning Machine Learning, exploring Deep Learning concepts, and practicing Data
-                            Structures & Algorithms (DSA) consistently.</p>
-                    </div>
-                </div>
-
-                <!-- 2027 Goals -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="glass-card timeline-content themed-card">
-                        <div class="timeline-year">2027</div>
-                        <h4>🎯 Impactful Projects & Hackathons</h4>
-                        <h5>Development & Competition Goals</h5>
-                        <p>Targeting to build industry-ready AI/ML applications and participate in key hackathons and AI
-                            competitions to test skillsets under pressure.</p>
-                    </div>
-                </div>
-
-                <!-- 2028 Graduation -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="glass-card timeline-content themed-card">
-                        <div class="timeline-year">2028</div>
-                        <h4>🎓 Graduate as an AI & ML Engineer</h4>
-                        <h5>Degree Completion Target</h5>
-                        <p>\Graduate with a strong foundation in Artificial Intelligence, Machine Learning,and Software
-                            Engineering.</p>
-                    </div>
-                </div>
-
-                <!-- Future Goal -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="glass-card timeline-content themed-card">
-                        <div class="timeline-year">Future Goals 🚀</div>
-                        <h4>🧠 AI/ML Engineering Career</h4>
-                        <h5>Generative AI & Real-World Impact</h5>
-                        <p>
-                            🔬 Work on Generative AI & Large Language Models.<br>
-                            🌍 Build scalable AI solutions that solve real-world problems.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience / Internships Section -->
-    <section id="experience" class="sec-padding reveal theme-cyan">
-        <div class="container">
-            <div class="sec-header">
-                <span class="sec-subtitle">Professional Experience</span>
-                <h2 class="sec-title">Internships</h2>
-            </div>
-
-            <div class="certs-grid">
-
-                <!-- Cognifyz -->
-                <div class="glass-card cert-card themed-card">
-                    <span class="cert-icon">📊</span>
-                    <div class="cert-info">
-                        <h3>Data Analysis Intern</h3>
-                        <p>Cognifyz Technologies</p>
-                    </div>
-                </div>
-
-                <!-- Code Alpha -->
-                <div class="glass-card cert-card themed-card">
-                    <span class="cert-icon">🤖</span>
-                    <div class="cert-info">
-                        <h3>Machine Learning Intern</h3>
-                        <p>Code Alpha</p>
-                    </div>
-                </div>
-
-                <!-- Future Intern -->
-                <div class="glass-card cert-card themed-card">
-                    <span class="cert-icon">🧠</span>
-                    <div class="cert-info">
-                        <h3>Machine Learning Intern</h3>
-                        <p>Future Intern</p>
-                    </div>
-                </div>
-
-                <!-- CodSoft -->
-                <div class="glass-card cert-card themed-card">
-                    <span class="cert-icon">🌐</span>
-                    <div class="cert-info">
-                        <h3>Web Development Intern</h3>
-                        <p>CodSoft</p>
-                    </div>
-                </div>
-
-                <!-- Yuva -->
-                <div class="glass-card cert-card themed-card">
-                    <span class="cert-icon">🚀</span>
-                    <div class="cert-info">
-                        <h3>AI Business Solutions Architect</h3>
-                        <p>Yuva</p>
-                    </div>
-                </div>
-
-                <!-- Accent Techno Soft -->
-                <div class="glass-card cert-card themed-card">
-                    <span class="cert-icon">💡</span>
-                    <div class="cert-info">
-                        <h3>Prompt Engineering Intern</h3>
-                        <p>Accent Techno Soft</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Project Universe Section -->
-    <section id="projects" class="sec-padding reveal theme-indigo">
-        <div class="container">
-            <div class="sec-header">
-                <span class="sec-subtitle">Project Universe</span>
-                <h2 class="sec-title">Featured Projects</h2>
-            </div>
-
-            <div class="projects-grid">
-                <!-- Heat Transfer Visualizer -->
-                <div class="glass-card project-card themed-card">
-                    <div>
-                        <span class="project-icon">🌍</span>
-                        <h3>Heat Transfer Visualizer</h3>
-                        <p>
-                            Interactive modeling application mapping heat diffusion and thermodynamics.
-                            Users can simulate thermal conduction rates across customized matrices and visualize
-                            temperature distributions in 2D graphs.
-                        </p>
-                    </div>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">NumPy</span>
-                        <span class="tech-tag">Matplotlib</span>
-                    </div>
-                </div>
-
-                <!-- Support Ticket Classification & Prioritization System -->
-                <div class="glass-card project-card themed-card">
-                    <div>
-                        <span class="project-icon">🎫</span>
-                        <h3>Support Ticket Classification & Prioritization System</h3>
-                        <p>
-                            Developed an NLP and Machine Learning-based system that automatically classifies customer
-                            support tickets into predefined categories and predicts their priority levels. The system
-                            helps support teams identify critical issues faster, improve response times, and streamline
-                            support workflow management.
-                        </p>
-                    </div>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">NLP</span>
-                        <span class="tech-tag">Scikit-learn</span>
-                        <span class="tech-tag">Pandas</span>
-                        <span class="tech-tag">Machine Learning</span>
-                    </div>
-                </div>
-
-                <!-- VoiceNoteFlow -->
-                <div class="glass-card project-card themed-card">
-                    <div>
-                        <span class="project-icon">🪐</span>
-                        <h3>VoiceNoteFlow</h3>
-                        <p>
-                            Application that transcribes vocal files and instantly structures verbal tracks into
-                            formatted markdown checklists, clean notes, or paragraphs.
-                        </p>
-                    </div>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">SpeechRecognition</span>
-                        <span class="tech-tag">Streamlit</span>
-                    </div>
-                </div>
-
-                <!-- Task Scheduler -->
-                <div class="glass-card project-card themed-card">
-                    <div>
-                        <span class="project-icon">🌎</span>
-                        <h3>Task Scheduler</h3>
-                        <p>
-                            High-efficiency planning script using a lightweight database schema to organize weekly
-                            tasks, evaluate priorities, track status, and output reminder logs.
-                        </p>
-                    </div>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">SQLite</span>
-                        <span class="tech-tag">Command Line</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certifications Section -->
-    <section id="certifications" class="sec-padding reveal theme-amber">
-        <div class="container">
-            <div class="sec-header">
-                <span class="sec-subtitle">Credentials</span>
-                <h2 class="sec-title">Certifications & Achievements</h2>
-            </div>
-
-            <div class="certs-grid">
-                <!-- Oracle GenAI -->
-                <div class="glass-card cert-card themed-card">
-                    <span class="cert-icon"><i class="fa-solid fa-trophy"></i></span>
-                    <div class="cert-info">
-                        <h3>Generative AI Professional</h3>
-                        <p>Oracle Cloud Infrastructure (OCI)</p>
-                    </div>
-                </div>
-
-                <!-- Oracle Data Science -->
-                <div class="glass-card cert-card themed-card">
-                    <span class="cert-icon"><i class="fa-solid fa-trophy"></i></span>
-                    <div class="cert-info">
-                        <h3>Data Science Professional</h3>
-                        <p>Oracle Cloud Infrastructure (OCI)</p>
-                    </div>
-                </div>
-
-                <!-- IBM ML -->
-                <div class="glass-card cert-card themed-card">
-                    <span class="cert-icon"><i class="fa-solid fa-trophy"></i></span>
-                    <div class="cert-info">
-                        <h3>Machine Learning with Python</h3>
-                        <p>IBM Certification</p>
-                    </div>
-                </div>
-
-                <!-- Coursera AI ML -->
-                <div class="glass-card cert-card themed-card">
-                    <span class="cert-icon"><i class="fa-solid fa-trophy"></i></span>
-                    <div class="cert-info">
-                        <h3>AI & ML Professional</h3>
-                        <p>Coursera Certification</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="sec-padding reveal theme-purple">
-        <div class="container">
-            <div class="sec-header">
-                <span class="sec-subtitle">Let's Connect</span>
-                <h2 class="sec-title">Get In Touch</h2>
-            </div>
-
-            <div class="contact-grid">
-                <!-- Left Column: Contact details -->
-                <div class="contact-info">
-                    <h3>Let's build something intelligent.</h3>
-                    <p>
-                        I am currently looking for internship opportunities and research partnerships.
-                        If you have questions about my projects or want to discuss AI integration workflows, send a
-                        message!
-                    </p>
-
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-item-icon"><i class="fa-solid fa-phone"></i></div>
-                            <div class="contact-item-text">
-                                <p>Contact</p>
-                                <p>9942480018</p>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <div class="contact-item-icon"><i class="fa-solid fa-envelope"></i></div>
-                            <div class="contact-item-text">
-                                <p>Email</p>
-                                <p>dhanyashree316@gmail.com</p>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <div class="contact-item-icon"><i class="fa-solid fa-location-dot"></i></div>
-                            <div class="contact-item-text">
-                                <p>Location</p>
-                                <p>Coimbatore, Tamil Nadu</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="contact-socials">
-                        <a href="https://www.linkedin.com/in/dhanyashree-s-38b940314/" class="social-btn"
-                            target="_blank" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://github.com/Dhanyashree06" class="social-btn" target="_blank"
-                            aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
-                    </div>
-
-                    <!-- Resume Buttons -->
-                    <div class="resume-download-wrap">
-                        <a href="Resume.pdf" download="Dhanyashree_S_Resume.pdf" class="btn btn-resume"
-                            id="download-resume-btn">
-                            <i class="fa-solid fa-file-arrow-down"></i>
-                            Download Resume
-                        </a>
-                        <a href="Resume.pdf" target="_blank" class="btn btn-resume-view" id="view-resume-btn">
-                            <i class="fa-solid fa-eye"></i>
-                            View Resume
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Right Column: Message Form -->
-                <div class="glass-card contact-form-container themed-card">
-                    <form id="contact-form" class="contact-form" novalidate>
-                        <div class="form-group">
-                            <label for="form-name">Name</label>
-                            <input type="text" id="form-name" class="form-control" placeholder="Your Name" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="form-email">Email</label>
-                            <input type="email" id="form-email" class="form-control" placeholder="yourname@example.com"
-                                required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="form-message">Message</label>
-                            <textarea id="form-message" class="form-control"
-                                placeholder="Hi Dhanyashree, I would love to talk about..." required></textarea>
-                        </div>
-
-                        <button type="submit" id="contact-submit-btn" class="btn btn-primary" style="border: none;">
-                            Send Message <i class="fa-regular fa-paper-plane"></i>
-                        </button>
-                    </form>
-                </div>
-
-                <!-- Toast Notification -->
-                <div id="contact-toast" class="contact-toast" aria-live="polite">
-                    <span id="contact-toast-icon"></span>
-                    <span id="contact-toast-msg"></span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p style="margin: 0; font-weight: 500; color: var(--text-primary);">© 2026 Dhanyashree S</p>
-            <p style="margin: 6px 0 0 0; font-weight: 600; color: #7c3aed; letter-spacing: 1px; font-size: 0.85rem;">
-                Learning • Building • Innovating</p>
-        </div>
-    </footer>
-
-    <!-- Custom Logic Script -->
-    <script src="script.js"></script>
+                    <!-- Custom Logic Script -->
+                    <script src="script.js"></script>
 </body>
 
 </html>
