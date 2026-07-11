@@ -22,7 +22,7 @@ class ParticleSystem {
         this.resize();
         this.particles = [];
         const count = Math.min(Math.floor((this.canvas.width * this.canvas.height) / 14000), 80);
-        
+
         for (let i = 0; i < count; i++) {
             this.particles.push({
                 x: Math.random() * this.canvas.width,
@@ -59,11 +59,11 @@ class ParticleSystem {
 
     draw() {
         this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-        
+
         // Draw connections
         for (let i = 0; i < this.particles.length; i++) {
             const p1 = this.particles[i];
-            
+
             for (let j = i + 1; j < this.particles.length; j++) {
                 const p2 = this.particles[j];
                 const dx = p1.x - p2.x;
@@ -128,13 +128,13 @@ class Typewriter {
         this.wordIndex = 0;
         this.txt = '';
         this.isDeleting = false;
-        
+
         this.tick();
     }
 
     tick() {
         const currentWord = this.words[this.wordIndex];
-        
+
         if (this.isDeleting) {
             this.txt = currentWord.substring(0, this.txt.length - 1);
         } else {
@@ -206,7 +206,7 @@ class AIAssistant {
     handleUserInteraction(qaPair) {
         // 1. Add User Bubble
         this.addBubble(qaPair.question, 'user');
-        
+
         // Hide options temporarily to prevent spamming
         this.optionsContainer.style.pointerEvents = 'none';
         this.optionsContainer.style.opacity = '0.5';
@@ -214,13 +214,13 @@ class AIAssistant {
         // 2. Add Assistant Thinking Bubble
         setTimeout(() => {
             const thinkingBubble = this.addBubble('Thinking...', 'assistant thinking-bubble');
-            
+
             // 3. Replace Thinking with Actual Answer
             setTimeout(() => {
                 thinkingBubble.querySelector('.bubble-content').innerHTML = this.formatResponse(qaPair.answer);
                 thinkingBubble.classList.remove('thinking-bubble');
                 this.chatBox.scrollTop = this.chatBox.scrollHeight;
-                
+
                 // Re-enable options
                 this.optionsContainer.style.pointerEvents = 'auto';
                 this.optionsContainer.style.opacity = '1';
@@ -232,15 +232,15 @@ class AIAssistant {
     addBubble(text, sender) {
         const bubble = document.createElement('div');
         bubble.className = `chat-bubble ${sender}`;
-        
+
         const isUser = sender === 'user';
         const avatarIcon = isUser ? 'fa-user' : 'fa-robot';
-        
+
         bubble.innerHTML = `
             <div class="bubble-avatar"><i class="fa-solid ${avatarIcon}"></i></div>
             <div class="bubble-content">${text}</div>
         `;
-        
+
         this.chatBox.appendChild(bubble);
         this.chatBox.scrollTop = this.chatBox.scrollHeight;
         return bubble;
@@ -258,14 +258,14 @@ class InteractiveTerminal {
         this.input = document.getElementById('term-input');
         this.body = document.getElementById('term-body');
         if (!this.input || !this.body) return;
-        
+
         this.setupEvents();
         this.focusInput();
     }
 
     setupEvents() {
         this.body.addEventListener('click', () => this.focusInput());
-        
+
         this.input.addEventListener('keydown', (e) => {
             if (e.key === 'Enter') {
                 const cmd = this.input.value.trim().toLowerCase();
@@ -412,7 +412,7 @@ function setupRevealObserver() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('active');
-                
+
                 // If it is the skills container, trigger progress bar animation
                 if (entry.target.id === 'skills') {
                     skillFills.forEach(fill => {
@@ -431,7 +431,7 @@ function setupRevealObserver() {
 function setupMobileMenu() {
     const hamburger = document.querySelector('.hamburger');
     const nav = document.querySelector('nav');
-    
+
     if (hamburger && nav) {
         hamburger.addEventListener('click', () => {
             nav.classList.toggle('active');
@@ -470,8 +470,8 @@ function setupContactForm() {
     form.addEventListener('submit', (e) => {
         e.preventDefault();
 
-        const name    = document.getElementById('form-name').value.trim();
-        const email   = document.getElementById('form-email').value.trim();
+        const name = document.getElementById('form-name').value.trim();
+        const email = document.getElementById('form-email').value.trim();
         const message = document.getElementById('form-message').value.trim();
 
         // Basic validation
@@ -500,7 +500,7 @@ function setupContactForm() {
 
         // Open default mail client with pre-filled content
         const subject = encodeURIComponent(`Portfolio Message from ${name}`);
-        const body    = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+        const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
         const mailtoLink = `mailto:dhanyashree316@gmail.com?subject=${subject}&body=${body}`;
 
         // Small delay for UX feel, then open mailto
@@ -521,7 +521,6 @@ function setupContactForm() {
 document.addEventListener('DOMContentLoaded', () => {
     new ParticleSystem();
     new Typewriter('typewriter', [
-        'Dhanyashree AI Lab 🧠',
         'Future AI Engineer 🚀',
         'Prompt Engineering Specialist 🪐',
         'Computer Science Innovator 🎓'
